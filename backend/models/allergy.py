@@ -10,4 +10,5 @@ class AllergySynonyms(Base):
     id = Column(Integer, primary_key=True, index=True)
     allergy_name = Column(String, index=True) # 알러지 성분명
     synonym = Column(String, index=True)      # 알러지 성분의 대체 이름
-    description = Column(String, nullable=True)  # 🚀 설명 필드 추가
+    description = Column(String, nullable=True)
+    warning = Column(String, nullable=True)

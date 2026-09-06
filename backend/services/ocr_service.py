@@ -36,9 +36,4 @@ class OCRService:
         if not text:
             return "🚨 OCR 오류: 이미지에서 글자를 읽지 못했습니다."
 
-        matched_allergies = find_matching_allergies(db, text)
-        if matched_allergies.startswith("🚨"):
-            return matched_allergies
-        if "✅ 안전합니다!" in matched_allergies:
-            return matched_allergies
-        return f"🚨 알러지 주의: {matched_allergies}"
+        return find_matching_allergies(db, text)
