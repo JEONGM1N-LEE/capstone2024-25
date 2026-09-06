@@ -4,7 +4,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, declarative_base
 
 # 기존에 만들어진 PostgreSQL 데이터베이스 연결
-DATABASE_URL = "postgresql://postgres:Ecas5272%%@localhost/users_db"
+DATABASE_URL = "postgresql://postgres:elep572@localhost/users_db"
 
 # 데이터베이스 엔진 생성 (기존 DB에 연결)
 engine = create_engine(DATABASE_URL)
